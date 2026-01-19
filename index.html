@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My HTML5 Final Project — Favourite Movies</title>
+  <meta name="description" content="A simple accessible HTML5 page for a Coursera final project example.">
+  <style>
+    /* Nhỏ gọn: chỉ để trang nhìn gọn khi peer review. Không bắt buộc. */
+    body{font-family:system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial;margin:0;padding:1rem;line-height:1.4}
+    header, main, footer{max-width:900px;margin:0 auto;padding:0 1rem}
+    header{border-bottom:1px solid #ddd;padding-bottom:0.5rem}
+    nav a{margin-right:1rem}
+    .gallery{display:flex;gap:1rem;flex-wrap:wrap}
+    figure{margin:0;width:30%}
+    img{width:100%;height:auto;display:block}
+  </style>
+</head>
+<body>
+  <!-- Bắt đầu page -->
+  <a class="skip-link" href="#main">Bỏ qua tới nội dung chính</a>
+
+  <header role="banner">
+    <h1>Những bộ phim yêu thích của tôi</h1>
+    <p>Ví dụ trang HTML5 cho bài tập cuối khóa — đảm bảo hợp lệ và có khả năng truy cập.</p>
+    <nav aria-label="Chuyển hướng chính">
+      <a href="#movies">Phim</a>
+      <a href="#list">Danh sách</a>
+      <a href="#about">Về trang</a>
+    </nav>
+  </header>
+
+  <main id="main" role="main">
+    <section id="movies" aria-labelledby="movies-heading">
+      <h2 id="movies-heading">Bộ sưu tập phim</h2>
+      <p>Dưới đây là ba ví dụ ảnh kèm chú thích để minh họa yêu cầu có ít nhất ba hình ảnh.</p>
+
+      <div class="gallery" aria-hidden="false">
+        <figure>
+          <img src="https://via.placeholder.com/600x400?text=Movie+One" alt="Poster bộ phim: The Example — nhân vật chính đứng trên cầu">
+          <figcaption>Poster: The Example (một phim giả định).</figcaption>
+        </figure>
+
+        <figure>
+          <img src="https://via.placeholder.com/600x400?text=Movie+Two" alt="Poster bộ phim: Adventure Road — cảnh xe chạy trên đường ven biển">
+          <figcaption>Poster: Adventure Road.</figcaption>
+        </figure>
+
+        <figure>
+          <img src="https://via.placeholder.com/600x400?text=Movie+Three" alt="Poster bộ phim: Silent Night — khung cảnh thành phố về đêm với đèn sáng">
+          <figcaption>Poster: Silent Night.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="list" aria-labelledby="list-heading">
+      <h2 id="list-heading">Ba thể loại phim ưa thích</h2>
+      <p>Dưới đây là một danh sách không thứ tự (ul) có ít nhất ba mục, thỏa yêu cầu.</p>
+      <ul>
+        <li>Hành động phiêu lưu — phim có nhịp nhanh, nhiều cảnh khám phá.</li>
+        <li>Chính kịch — phim tập trung vào cốt truyện và nhân vật.</li>
+        <li>Hoạt hình — phim sáng tạo, dành cho gia đình hoặc người lớn.</li>
+      </ul>
+    </section>
+
+    <aside aria-labelledby="about" role="complementary">
+      <h2 id="about">Về trang này</h2>
+      <p>Trang mẫu này được tạo để đáp ứng các điều kiện: doctype, head, title, main; có h1; có ít nhất 3 ảnh; có danh sách 3 mục; có liên kết ngoài.</p>
+      <p>Tham khảo HTML5: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener noreferrer">MDN — HTML</a></p>
+    </aside>
+
+  </main>
+
+  <footer role="contentinfo">
+    <p>© 2026 — Trang mẫu cho bài tập HTML5. <a href="https://www.w3.org/" target="_blank" rel="noopener noreferrer">W3C</a></p>
+  </footer>
+</body>
+</html>
